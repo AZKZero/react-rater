@@ -67,7 +67,7 @@ export default function Rater(props) {
     }
     return (
       <div
-        key={`star-${i}`}
+        key={`star-${i} ${rating}`}
         onClick={interactive ? rate.bind(this, i + 1) : null}
         onMouseOver={interactive ? willRate.bind(this, i + 1) : null}
       >
